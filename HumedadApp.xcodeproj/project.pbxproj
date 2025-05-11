@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED83343B2DCEDFD2004D2F52 /* HumedadAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83343A2DCEDFD2004D2F52 /* HumedadAppApp.swift */; };
+		ED83343D2DCEDFD2004D2F52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83343C2DCEDFD2004D2F52 /* ContentView.swift */; };
+		ED83343F2DCEDFD3004D2F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED83343E2DCEDFD3004D2F52 /* Assets.xcassets */; };
+		ED8334422DCEDFD3004D2F52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8334412DCEDFD3004D2F52 /* Preview Assets.xcassets */; };
+		ED8334442DCEDFD3004D2F52 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8334432DCEDFD3004D2F52 /* Persistence.swift */; };
+		ED8334472DCEDFD3004D2F52 /* HumedadApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED8334452DCEDFD3004D2F52 /* HumedadApp.xcdatamodeld */; };
+		ED8334512DCEDFD3004D2F52 /* HumedadAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8334502DCEDFD3004D2F52 /* HumedadAppTests.swift */; };
+		ED83345B2DCEDFD3004D2F52 /* HumedadAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83345A2DCEDFD3004D2F52 /* HumedadAppUITests.swift */; };
+		ED83345D2DCEDFD3004D2F52 /* HumedadAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83345C2DCEDFD3004D2F52 /* HumedadAppUITestsLaunchTests.swift */; };
+		ED83346A2DCEE008004D2F52 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8334692DCEE008004D2F52 /* ApiService.swift */; };
+		ED83346C2DCEE041004D2F52 /* ResultModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83346B2DCEE041004D2F52 /* ResultModalView.swift */; };
+		ED83346E2DCEE06A004D2F52 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83346D2DCEE06A004D2F52 /* MailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED83344D2DCEDFD3004D2F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED83342F2DCEDFD2004D2F52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED8334362DCEDFD2004D2F52;
+			remoteInfo = HumedadApp;
+		};
+		ED8334572DCEDFD3004D2F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED83342F2DCEDFD2004D2F52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED8334362DCEDFD2004D2F52;
+			remoteInfo = HumedadApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED8334372DCEDFD2004D2F52 /* HumedadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumedadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED83343A2DCEDFD2004D2F52 /* HumedadAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumedadAppApp.swift; sourceTree = "<group>"; };
+		ED83343C2DCEDFD2004D2F52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED83343E2DCEDFD3004D2F52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED8334412DCEDFD3004D2F52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED8334432DCEDFD3004D2F52 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ED8334462DCEDFD3004D2F52 /* HumedadApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HumedadApp.xcdatamodel; sourceTree = "<group>"; };
+		ED83344C2DCEDFD3004D2F52 /* HumedadAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumedadAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8334502DCEDFD3004D2F52 /* HumedadAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumedadAppTests.swift; sourceTree = "<group>"; };
+		ED8334562DCEDFD3004D2F52 /* HumedadAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumedadAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED83345A2DCEDFD3004D2F52 /* HumedadAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumedadAppUITests.swift; sourceTree = "<group>"; };
+		ED83345C2DCEDFD3004D2F52 /* HumedadAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumedadAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED8334692DCEE008004D2F52 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		ED83346B2DCEE041004D2F52 /* ResultModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModalView.swift; sourceTree = "<group>"; };
+		ED83346D2DCEE06A004D2F52 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED8334342DCEDFD2004D2F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8334492DCEDFD3004D2F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8334532DCEDFD3004D2F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED83342E2DCEDFD2004D2F52 = {
+			isa = PBXGroup;
+			children = (
+				ED8334392DCEDFD2004D2F52 /* HumedadApp */,
+				ED83344F2DCEDFD3004D2F52 /* HumedadAppTests */,
+				ED8334592DCEDFD3004D2F52 /* HumedadAppUITests */,
+				ED8334382DCEDFD2004D2F52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED8334382DCEDFD2004D2F52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED8334372DCEDFD2004D2F52 /* HumedadApp.app */,
+				ED83344C2DCEDFD3004D2F52 /* HumedadAppTests.xctest */,
+				ED8334562DCEDFD3004D2F52 /* HumedadAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED8334392DCEDFD2004D2F52 /* HumedadApp */ = {
+			isa = PBXGroup;
+			children = (
+				ED83343A2DCEDFD2004D2F52 /* HumedadAppApp.swift */,
+				ED83343C2DCEDFD2004D2F52 /* ContentView.swift */,
+				ED83346B2DCEE041004D2F52 /* ResultModalView.swift */,
+				ED83346D2DCEE06A004D2F52 /* MailView.swift */,
+				ED8334692DCEE008004D2F52 /* ApiService.swift */,
+				ED83343E2DCEDFD3004D2F52 /* Assets.xcassets */,
+				ED8334432DCEDFD3004D2F52 /* Persistence.swift */,
+				ED8334452DCEDFD3004D2F52 /* HumedadApp.xcdatamodeld */,
+				ED8334402DCEDFD3004D2F52 /* Preview Content */,
+			);
+			path = HumedadApp;
+			sourceTree = "<group>";
+		};
+		ED8334402DCEDFD3004D2F52 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED8334412DCEDFD3004D2F52 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED83344F2DCEDFD3004D2F52 /* HumedadAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED8334502DCEDFD3004D2F52 /* HumedadAppTests.swift */,
+			);
+			path = HumedadAppTests;
+			sourceTree = "<group>";
+		};
+		ED8334592DCEDFD3004D2F52 /* HumedadAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED83345A2DCEDFD3004D2F52 /* HumedadAppUITests.swift */,
+				ED83345C2DCEDFD3004D2F52 /* HumedadAppUITestsLaunchTests.swift */,
+			);
+			path = HumedadAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED8334362DCEDFD2004D2F52 /* HumedadApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8334602DCEDFD3004D2F52 /* Build configuration list for PBXNativeTarget "HumedadApp" */;
+			buildPhases = (
+				ED8334332DCEDFD2004D2F52 /* Sources */,
+				ED8334342DCEDFD2004D2F52 /* Frameworks */,
+				ED8334352DCEDFD2004D2F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HumedadApp;
+			productName = HumedadApp;
+			productReference = ED8334372DCEDFD2004D2F52 /* HumedadApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED83344B2DCEDFD3004D2F52 /* HumedadAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8334632DCEDFD3004D2F52 /* Build configuration list for PBXNativeTarget "HumedadAppTests" */;
+			buildPhases = (
+				ED8334482DCEDFD3004D2F52 /* Sources */,
+				ED8334492DCEDFD3004D2F52 /* Frameworks */,
+				ED83344A2DCEDFD3004D2F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED83344E2DCEDFD3004D2F52 /* PBXTargetDependency */,
+			);
+			name = HumedadAppTests;
+			productName = HumedadAppTests;
+			productReference = ED83344C2DCEDFD3004D2F52 /* HumedadAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED8334552DCEDFD3004D2F52 /* HumedadAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8334662DCEDFD3004D2F52 /* Build configuration list for PBXNativeTarget "HumedadAppUITests" */;
+			buildPhases = (
+				ED8334522DCEDFD3004D2F52 /* Sources */,
+				ED8334532DCEDFD3004D2F52 /* Frameworks */,
+				ED8334542DCEDFD3004D2F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED8334582DCEDFD3004D2F52 /* PBXTargetDependency */,
+			);
+			name = HumedadAppUITests;
+			productName = HumedadAppUITests;
+			productReference = ED8334562DCEDFD3004D2F52 /* HumedadAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED83342F2DCEDFD2004D2F52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					ED8334362DCEDFD2004D2F52 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					ED83344B2DCEDFD3004D2F52 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ED8334362DCEDFD2004D2F52;
+					};
+					ED8334552DCEDFD3004D2F52 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ED8334362DCEDFD2004D2F52;
+					};
+				};
+			};
+			buildConfigurationList = ED8334322DCEDFD2004D2F52 /* Build configuration list for PBXProject "HumedadApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED83342E2DCEDFD2004D2F52;
+			productRefGroup = ED8334382DCEDFD2004D2F52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED8334362DCEDFD2004D2F52 /* HumedadApp */,
+				ED83344B2DCEDFD3004D2F52 /* HumedadAppTests */,
+				ED8334552DCEDFD3004D2F52 /* HumedadAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED8334352DCEDFD2004D2F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8334422DCEDFD3004D2F52 /* Preview Assets.xcassets in Resources */,
+				ED83343F2DCEDFD3004D2F52 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED83344A2DCEDFD3004D2F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8334542DCEDFD3004D2F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED8334332DCEDFD2004D2F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8334472DCEDFD3004D2F52 /* HumedadApp.xcdatamodeld in Sources */,
+				ED83346C2DCEE041004D2F52 /* ResultModalView.swift in Sources */,
+				ED83346A2DCEE008004D2F52 /* ApiService.swift in Sources */,
+				ED8334442DCEDFD3004D2F52 /* Persistence.swift in Sources */,
+				ED83343D2DCEDFD2004D2F52 /* ContentView.swift in Sources */,
+				ED83346E2DCEE06A004D2F52 /* MailView.swift in Sources */,
+				ED83343B2DCEDFD2004D2F52 /* HumedadAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8334482DCEDFD3004D2F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8334512DCEDFD3004D2F52 /* HumedadAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8334522DCEDFD3004D2F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED83345B2DCEDFD3004D2F52 /* HumedadAppUITests.swift in Sources */,
+				ED83345D2DCEDFD3004D2F52 /* HumedadAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED83344E2DCEDFD3004D2F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED8334362DCEDFD2004D2F52 /* HumedadApp */;
+			targetProxy = ED83344D2DCEDFD3004D2F52 /* PBXContainerItemProxy */;
+		};
+		ED8334582DCEDFD3004D2F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED8334362DCEDFD2004D2F52 /* HumedadApp */;
+			targetProxy = ED8334572DCEDFD3004D2F52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ED83345E2DCEDFD3004D2F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED83345F2DCEDFD3004D2F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED8334612DCEDFD3004D2F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HumedadApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HumedadApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED8334622DCEDFD3004D2F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HumedadApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HumedadApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED8334642DCEDFD3004D2F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HumedadAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HumedadApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HumedadApp";
+			};
+			name = Debug;
+		};
+		ED8334652DCEDFD3004D2F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HumedadAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HumedadApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HumedadApp";
+			};
+			name = Release;
+		};
+		ED8334672DCEDFD3004D2F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HumedadAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HumedadApp;
+			};
+			name = Debug;
+		};
+		ED8334682DCEDFD3004D2F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.HumedadAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HumedadApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED8334322DCEDFD2004D2F52 /* Build configuration list for PBXProject "HumedadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED83345E2DCEDFD3004D2F52 /* Debug */,
+				ED83345F2DCEDFD3004D2F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8334602DCEDFD3004D2F52 /* Build configuration list for PBXNativeTarget "HumedadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8334612DCEDFD3004D2F52 /* Debug */,
+				ED8334622DCEDFD3004D2F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8334632DCEDFD3004D2F52 /* Build configuration list for PBXNativeTarget "HumedadAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8334642DCEDFD3004D2F52 /* Debug */,
+				ED8334652DCEDFD3004D2F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8334662DCEDFD3004D2F52 /* Build configuration list for PBXNativeTarget "HumedadAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8334672DCEDFD3004D2F52 /* Debug */,
+				ED8334682DCEDFD3004D2F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ED8334452DCEDFD3004D2F52 /* HumedadApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ED8334462DCEDFD3004D2F52 /* HumedadApp.xcdatamodel */,
+			);
+			currentVersion = ED8334462DCEDFD3004D2F52 /* HumedadApp.xcdatamodel */;
+			path = HumedadApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ED83342F2DCEDFD2004D2F52 /* Project object */;
+}
